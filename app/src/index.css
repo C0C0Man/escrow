@@ -1,0 +1,119 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Muli', sans-serif;
+}
+
+.box {
+  display: flex;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.contract,
+.existing-contracts {
+  text-align: center;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 50%;
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+}
+
+label {
+  text-transform: uppercase;
+  color: #777;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  background-color: #f58427;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  width: 90%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.existing-contracts {
+  word-wrap: break-word;
+}
+
+.button:hover {
+  background-color: #e05e0a;
+}
+
+.existing-contracts h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.existing-contracts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.existing-contracts li {
+  word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  .contract,
+  .existing-contracts {
+    flex-basis: calc(50% - 40px); 
+    width: 90%;
+    padding: 0;
+    margin: 10px;
+  }
+}
